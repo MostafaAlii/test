@@ -22,7 +22,7 @@
     <div class="menuOff">
         <div style="height:23px;"></div>
         <div style="width:100px;text-align:center;height:28px;color:#8E1C58;font-size:24px;"><a style="color:#8E1C58;"
-                href="{{--route('website.freeOrder')--}}">ORDER</a></div>
+                href="{{route('website.free-orders.index')}}">ORDER</a></div>
         <div style="text-align:center;color:#777777;font-size:12px;width:120px;">Go to order</div>
         <div style="height:23px;"></div>
         <div class="arrow3"></div>
