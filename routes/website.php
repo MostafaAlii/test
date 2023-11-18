@@ -34,6 +34,12 @@ Route::group(['as' => 'website.'], function () {
             Route::get('order/checkout/webhook/{order?}/{env?}', [Frontend\OrderController::class, 'webhook'])->name('order.check.webhook.ipn');
         });
     });
+
+    Route::group(['prefix' => 'client', 'middleware' => ['guest:web']], function () {
+        Route::resource('free-orders', Frontend\FreeOrderController::class);
+        Route::put('orders/{order}/update_details', [Frontend\FreeOrderController::class, 'updateDetails'])->name('free-order.update_details');
+        Route::put('orders/{order}/newUpdate', [Frontend\FreeOrderController::class, 'newUpdate'])->name('free-order.newUpdate');
+    });
 });
 
 require __DIR__.'/auth.php';

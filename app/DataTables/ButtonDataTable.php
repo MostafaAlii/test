@@ -17,7 +17,10 @@ class ButtonDataTable extends DataTable {
             ->editColumn('updated_at', function (Button $button) {
                 return $button->created_at->format('Y-m-d');
             })
-            ->rawColumns(['action', 'created_at', 'updated_at']); 
+            ->editColumn('status', function (Button $button) {
+                return $button->statusWithLabel();
+            })
+            ->rawColumns(['action', 'created_at', 'updated_at', 'status']); 
     }
 
     public function query(): QueryBuilder {
@@ -48,6 +51,8 @@ class ButtonDataTable extends DataTable {
             ['name' => 'id', 'data' => 'id', 'title' => '#','searchable' => false,],
             ['name' => 'name', 'data' => 'name', 'title' => 'name', 'orderable' => false],
             ['name' => 'type', 'data' => 'type', 'title' => 'type', 'orderable' => false],
+            ['name' => 'url', 'data' => 'url', 'title' => 'url', 'orderable' => false],
+            ['name' => 'status', 'data' => 'status', 'title' => 'Status', 'orderable' => false, 'searchable' => false,],
             ['name' => 'created_at', 'data' => 'created_at', 'title' => 'Created At', 'orderable' => false, 'searchable' => false,],
             ['name' => 'updated_at', 'data' => 'updated_at', 'title' => 'Update At', 'orderable' => false, 'searchable' => false,],
             ['name' => 'action', 'data' => 'action', 'title' => 'Action', 'orderable' => false, 'searchable' => false, 'printable' => false, 'exportable' => false],

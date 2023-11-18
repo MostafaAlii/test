@@ -21,6 +21,16 @@
                     </div>
                     <!-- End Name -->
 
+                    <!-- Start URL -->
+                    <div class="form-group">
+                        <label for="url">URL</label>
+                        <input type="text" class="form-control" required name="url" id="url" value="">
+                        @error('url')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <!-- End URL -->
+
                     <div class="form-group">
                         <label for="name">Price</label>
                         <input type="number" class="form-control" required name="price" id="price" value="">

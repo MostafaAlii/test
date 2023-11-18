@@ -21,11 +21,12 @@
         <!--</div>-->
         <!-- End Left Menu -->
         <!-- Start Right Menu -->
+        @auth('web')
         <ul class="navbar-nav d-flex align-items-center">
             <li class="nav-item dropdown userlogin-dropdown account-collapse">
                 <a class="nav-link navbar-profile-dropdown">
-                    <div class="user-avatar">{{ implode('', array_map(function($word) { return strtoupper(substr($word, 0, 1)); }, explode(' ', get_user_data()->name))) }}</div>
-                    {{ get_user_data()->name }} .
+                    <div class="user-avatar">{{ implode('', array_map(function($word) { return strtoupper(substr($word, 0, 1)); }, explode(' ', get_user_data()?->name))) }}</div>
+                    {{ get_user_data()?->name }} .
                     <i class="ml-1 fa fa-chevron-down"></i>
                 </a>
                 <div class="user-dropdown dropdown-menu-right" id="account-collapse">
@@ -43,6 +44,7 @@
                 <div class="my-btn-bg"></div>
             </li>
         </ul>
+        @endauth
         <!-- End Right Menu -->
     </div>
 </nav>

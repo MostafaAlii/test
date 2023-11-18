@@ -57,6 +57,12 @@ return [
             'visibility' => 'public',
         ],
 
+        'free_service_images' => [
+            'driver' => 'local',
+            'root' => public_path('dashboard/img/free_order'),
+            'visibility' => 'public',
+        ],
+
         'reference_images' => [
             'driver' => 'local',
             'root' => public_path('dashboard/img/orders/references'),

@@ -38,8 +38,19 @@
                     </div>
                     <!-- End Status Selected -->
 
+                    <!-- Start Url -->
+                    <div class="p-1 form-group col-6">
+                        <div class="input-group url">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">https://</span>
+                                <input type="text" class="form-control" name="url" placeholder="Type a Url Link" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Url -->
+
                     <!-- Start Status Status -->
-                    <div class="p-1 form-group">
+                    <div class="p-1 form-group" id="typePaymentsGroup">
                         <label for="typePaymernts">payment type</label>
                         <select name="typePaymernts" id="typePayments" class="form-control">
                             <option selected disabled>Select {{ $title }} type Payments...</option>

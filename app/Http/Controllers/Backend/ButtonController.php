@@ -9,20 +9,11 @@ class ButtonController extends Controller {
     public function index(ButtonDataTable $button) {
         return $button->render('admin.buttons.index', ['title' => 'Buttons']);
     }
-
-    /*public function store(Request $request) {
-        try {
-            $button = Button::create($request->input());
-            Session::flash('message', 'data create success');
-            Session::flash('alert-class', 'alert-success');
-            return redirect()->back();
-        } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'Try again later Something went wrong');
-        }
-    }*/
+    
     public function store(Request $request) {
         try {
             $type = $request->input('type');
+            $url = ($type == 'payment') ? null : $request->input('url');
             $existingHeaderButtonsCount = Button::where('type', 'header')->count();
             $existingServicesButtonsCount = Button::where('type', 'service')->count();
             $existingPaymentsButtonsCount = Button::where('type', 'payment')->count();
@@ -31,14 +22,18 @@ class ButtonController extends Controller {
                 ($type == 'payment' && $existingPaymentsButtonsCount >= 2)) {
                 return redirect()->back()->with('error', 'You cannot add more buttons of type ' . $type);
             }
-            $button = Button::create($request->input());
+            $requestData = $request->except('url');
+            if ($url !== null) 
+                $requestData['url'] = $url;
+            Button::create($requestData);
             Session::flash('message', 'Data create success');
             Session::flash('alert-class', 'alert-success');
             return redirect()->back();
         } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Try again later. Something went wrong.');
         }
-    }    
+    }
+    
 
     public function update(Request $request, $id) {
         try {

@@ -30,6 +30,16 @@
                         @enderror
                     </div>
 
+                    <!-- Start Name -->
+                    <div class="form-group">
+                        <label for="url">URL</label>
+                        <input type="text" class="form-control" name="url" id="url" value="{{$services->url}}">
+                        @error('url')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <!-- End Name -->
+
                     <!-- Start Image -->
                     <div class="form-group">
                         <label>Image : <span style="color:rgb(199, 8, 8)">*</span></label>

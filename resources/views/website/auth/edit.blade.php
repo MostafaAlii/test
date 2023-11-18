@@ -48,6 +48,15 @@
                             </div>
 
                             <br>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <label>website</label>
+                                    <input type="text" class="form-control" name="website" value="{{$data->website}}" required>
+                                </div>
+                            </div>
+
+                            <br>
 
                             <div class="row">
                                 <div class="col">

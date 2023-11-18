@@ -1,6 +1,6 @@
 @extends('website.layouts.common.web.login.login')
 @section('css')
-
+<link href="{{ asset('website/resources/css/new.css') }}" rel="stylesheet" />
 @endsection
 
 @section('pageTitle')
@@ -13,7 +13,7 @@
 
 <!-- Start Navbar -->
     <div class="container-fluid">
-         <nav class="container navbar navbar-expand-lg navbar-light bg-light navbar-white-bg">
+         {{--<nav class="container navbar navbar-expand-lg navbar-light bg-light navbar-white-bg">
             <a class="navbar-brand logo" href="#"><img src="{{ asset('website/resources/dashboard/resource/img/logo.png') }}" /></a>
             <button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
                     <!--</li>-->
                 </ul>
             </div>
-        </nav>
+        </nav>--}}
         <!-- End Navbar -->
     <!-- End Navbar -->
 

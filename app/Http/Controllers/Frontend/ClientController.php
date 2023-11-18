@@ -36,6 +36,7 @@ class ClientController extends Controller
 
         $request->validate([
             'name' => ['nullable', 'string', 'max:255'],
+            'website' => ['nullable', 'string', 'max:255'],
             'email' => ['nullable', 'string', 'email', 'max:255', 'unique:users,email,'. $request->id],
             'password' => ['sometimes', 'confirmed'],
         ]);
@@ -45,7 +46,7 @@ class ClientController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => isset($request->password) ? Hash::make($request->password) : $data->password,
-           // 'phone' => $request->phone ?? null,
+           'website' => $request->website ?? null,
         ]);
         return redirect()->back()->with(['success' => 'Edit Profile Success']);
     }
