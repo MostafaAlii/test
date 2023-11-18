@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::table('buttons', function (Blueprint $table) {
             $table->string('url')->nullable();
         });
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('website')->nullable();
+        });
         Schema::table('services', function (Blueprint $table) {
             $table->string('url')->nullable();
         });
@@ -38,6 +41,10 @@ return new class extends Migration
 
         Schema::table('services', function (Blueprint $table) {
             $table->dropColumn('url');
+        });
+
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('website');
         });
 
         Schema::table('slides', function (Blueprint $table) {

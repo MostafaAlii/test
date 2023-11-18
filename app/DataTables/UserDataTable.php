@@ -73,6 +73,7 @@ class UserDataTable extends DataTable
             ['name' => 'id', 'data' => 'id', 'title' => '#','searchable' => false,],
             ['name' => 'name', 'data' => 'name', 'title' => 'Name',],
             ['name' => 'email', 'data' => 'email', 'title' => 'Email',],
+            ['name' => 'website', 'data' => 'website', 'title' => 'Website',],
             ['name' => 'retouch service', 'data' => 'retouchService', 'title' => 'retouch service',],
             ['name' => 'status', 'data' => 'status', 'title' => 'Status', 'orderable' => false, 'searchable' => false,],
             ['name' => 'created_at', 'data' => 'created_at', 'title' => 'Created At', 'orderable' => false, 'searchable' => false,],
