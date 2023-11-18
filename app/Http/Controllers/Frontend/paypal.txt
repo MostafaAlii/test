@@ -1,0 +1,17 @@
+Facilator Owner ::
+Account 1
+email : sb-mc8t4327545437@business.example.com
+password : 6I.UGfvK
+sandbox Url : https://sandbox.paypal.com
+-----------------------------------------------------
+Buyer
+email : sb-mdmb014705733@personal.example.com
+password : O(&"T6=l
+sandbox Url : https://sandbox.paypal.com
+
+---------------------------------------------------------
+2Checkout
+Marchant Code : 254746336593
+SecretKey : )*6G|mp7sJur1tFIBDx9
+Secret word : shfba3d?WsAX5%QKrANnJ$AVHBYr6gV&?gYNzN&FfA%VCXRCb2b*QTHQTqdHDTTB
+Buy link secret word : shfba3d?WsAX5%QKrANnJ$AVHBYr6gV&?gYNzN&FfA%VCXRCb2b*QTHQTqdHDTTB

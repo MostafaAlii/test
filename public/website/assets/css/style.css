@@ -1,0 +1,381 @@
+/* ------------------------------------------------
+  Project:   Thomso - Responsive Multi-purpose HTML5 Template
+  Build:     Bootstrap 4.1.1
+  Author:    ThemeHt
+------------------------------------------------ */
+/* ------------------------
+    Table of Contents
+
+  1. General
+  2. Typography
+  3. Helper class
+  4. Text color
+  5. Background color
+  6. Animation
+  7. Parallax
+  8. Button
+  9. Title
+  10. Background Overlay
+  11. Transform X-Y
+  12. Header
+  13. Navigation
+  14. Banner
+  15. Counter
+  16. Demo
+  17. Portfolio
+  18. Tab
+  19. Featured Box
+  20. Scroll to Top
+  21. Flat Icon
+  22. Shake Animation
+
+ 
+/* ------------------------
+    General
+------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
+
+
+body {font-family: 'Source Sans Pro', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color:#666666; overflow-x: hidden;}
+ a, .btn, img, span, .portfolio-filter button, .navbar-nav .nav-link, .navbar-nav .nav-link::before, .owl-item, .featured-item, .link-title a::before, .home-img:hover{ -webkit-transition: all 0.4s ease-in-out 0s; -moz-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
+a:focus { text-decoration: none !important; }
+a:focus, a:hover { color: #FF4500; text-decoration: none !important; }
+a, button, input { outline: medium none !important; color: #FF4500; }
+
+h1, h2, h3, h4, h5, h6{font-weight:normal; margin-top: 0px; margin-bottom: 0px; text-transform: capitalize;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
+h1 { font-size: 60px; font-style: normal; line-height: 70px; font-weight: bold; text-transform: capitalize; color: #FF4500;}
+h2 { font-size: 40px; font-style: normal; line-height: 50px; font-weight: bold; color: #d6d6d6; text-transform: capitalize; position: relative;}
+h5 { font-size: 20px; font-style: normal; text-transform: capitalize; letter-spacing: 2px; font-weight: 600; line-height: 30px; color: #222021;}
+
+
+
+ul { margin: 0px; padding: 0px; }
+*::-moz-selection { background: #FF4500; color: #fff; text-shadow: none; }
+::-moz-selection { background: #FF4500; color: #fff; text-shadow: none; }
+::selection { background: #FF4500; color: #fff; text-shadow: none; }
+
+/* ------------------------
+    Helper class
+------------------------*/
+.lead{font-weight: normal; font-size: 16px; line-height: 30px;}
+.o-hidden{overflow: hidden;}
+.img-center{display: inline-block !important; max-width: 100%;}
+.fa{line-height: inherit;}
+section{padding: 80px 0;}
+h2 span{color: #FF4500; font-weight: bold;}
+.section-title{margin-bottom: 50px;}
+.mt-10{margin-top: 100px;}
+.z-index-0{z-index: 0; position: relative;}
+.z-index-1{z-index: 1; position: relative;}
+
+/* ------------------------
+    Text color
+------------------------*/
+.text-theme{color:#FF4500;}
+.text-white{color:#ffffff;}
+.text-black{color:#222021;}
+.text-grey{color:#aaaaaa;}
+
+/* ------------------------
+    Bg color
+------------------------*/
+.white-bg{background:#ffffff;}
+.dark-bg{background:#222021;}
+.grey-bg{background:#fbfbfb;}
+.theme-bg{background:#FF4500;}
+.dark-bg a{color: #ffffff !important;}
+
+/* ------------------------
+    Animation
+------------------------*/
+.animation{width: 100%; background-position: 0px 0px; background-repeat: repeat; animation: animatedBackground 40s linear infinite;
+-ms-animation: animatedBackground 40s linear infinite; -moz-animation: animatedBackground 40s linear infinite; -webkit-animation: animatedBackground 40s linear infinite;}
+
+/* ------------------------
+    Parallax
+------------------------*/
+.parallax { background-clip: initial; background-color: rgba(0, 0, 0, 0); background-origin: initial; background-position: center center; background-repeat: no-repeat; background-size: cover; position: relative; z-index: 0; background-attachment: fixed !important; }
+
+/* ------------------------
+    Button
+------------------------*/
+.btn{padding: 12px 40px; background: transparent; border-radius: 0; border: 2px solid transparent; position: relative; overflow: hidden; z-index: 9; text-transform: uppercase;}
+.btn.btn-sm{padding: 10px 40px;}
+.btn.btn-lg{padding: 15px 40px;}
+.btn:hover{color: #ffffff}
+.btn:focus, .btn.focus{color: #FF4500; box-shadow: none;}
+.btn.btn-theme{background: #FF4500; color: #ffffff;}
+.btn.btn-border{border:2px solid #FF4500;}
+.btn.btn-radius{border-radius: 5px;}
+.btn.btn-circle{border-radius: 30px;}
+.btn.btn-iconic i{margin-left:10px; font-size:15px;}
+.btn.btn-iconic span, .btn.btn-iconic i{-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;transition:all .2s ease-out;}
+.btn.btn-iconic i{position:absolute;display:block;top:50%;right:0;-webkit-transform:translate(40px,-50%);-ms-transform:translate(40px,-50%);transform:translate(40px,-50%);ms-transform:translate(40px,-50%);opacity:0}
+.btn.btn-iconic span{width:100%;height:100%;display:block;-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);ms-transform:translate(0,0);-webkit-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden;ms-backface-visibility:hidden;}
+.btn:hover.btn-iconic span{-webkit-transform:translate(-20px,0);-ms-transform:translate(-20px,0);transform:translate(-20px,0);ms-transform:translate(-20px,0);}
+.btn:hover.btn-iconic i{opacity:1;}
+.btn:before {content: ''; display: block; position: absolute; background: #FF4500; width: 100%; height: 0%; left: 50%; top: 50%;
+transform: translate(-50%, -50%) rotate(40deg); -webkit-transform: translate(-50%, -50%) rotate(40deg); -moz-transform: translate(-50%, -50%) rotate(40deg); transition: all .5s; -webkit-transition: all .5s;
+-moz-transition: all .5s;}
+.btn.btn-theme:before{background: #111;}
+.btn:hover:before {width: 110%; height: 400%; z-index: -1;}
+.btn.btn-white{background: #ffffff;}
+.btn.btn-white.btn-border{border-color: #ffffff; background: none; color: #ffffff;}
+.btn.btn-white:hover{color: #ffffff;}
+.btn.btn-white.btn-border:hover{color: #FF4500;}
+.btn.btn-white:before{background: #222021;}
+.btn.btn-white.btn-border:before{background: #ffffff;}
+.btn + .btn{margin-left: 10px;}
+
+/* ------------------------
+    Title
+------------------------*/
+.title{position: relative; color: #222021; margin-bottom: 15px; display: inline-block;}
+.title:before{position: absolute; content: ""; bottom: 4px; left: 0; width: 100px; height: 15px; background: #FF4500; z-index: -1}
+.text-center .title:before{left: 50%;}
+.text-right .title:before{left: inherit; right: 0; transform: inherit;}
+.text-right .title{right: inherit; left: 0;}
+.title span{color: #FF4500}
+.theme-bg .title:before, .dark-bg .title:before{background-color: rgba(255,255,255,0.2);}
+.dark-bg h2.title{color: #ffffff;}
+.theme-bg h2.title span{color: #222021;}
+
+/* ------------------------
+    Background Overlay
+------------------------*/
+[data-overlay] {position:relative; z-index:0;}
+[data-overlay]:before {position: absolute;  content: '';  background-color: #000000;  width: 100%;  height: 100%;  top: 0;  left: 0; z-index:-1;}
+[data-overlay].white-overlay:before{background-color:#fff;}
+[data-overlay].theme-overlay:before{background-color:#ff4500;}
+[data-overlay="1"]:before{opacity:0.1;}
+[data-overlay="2"]:before{opacity:0.2;}
+[data-overlay="3"]:before{opacity:0.3;}
+[data-overlay="4"]:before{opacity:0.4;}
+[data-overlay="5"]:before{opacity:0.5;}
+[data-overlay="6"]:before{opacity:0.6;}
+[data-overlay="7"]:before{opacity:0.7;}
+[data-overlay="8"]:before{opacity:0.8;}
+[data-overlay="9"]:before{opacity:0.9;}
+[data-overlay="10"]:before{opacity:1;}
+[data-overlay="0"]:before{opacity:0;}
+
+
+/* ------------------------
+    Transform X-Y
+------------------------*/
+/*--translate-X--*/
+.text-center .title:before {transform: translateX(-50%); -webkit-transform: translateX(-50%); -o-transform: translateX(-50%); -ms-transform: translateX(-50%); -moz-transform: translateX(-50%);}
+
+/*--translate-Y--*/
+.transform-y, .link-title a::before, .align-center{transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%);}
+
+
+/* ------------------------
+    Header
+------------------------*/
+.header{position: absolute; width: 100%; z-index: 9999;}
+#header-wrap{background: rgba(255, 255, 255, 0.02); padding: 15px 0; width: 100%;} 
+#header-wrap{padding: 20px 0; width: 100%;}
+#header-wrap.fixed-header {position: fixed; padding: 15px 0; top:0; left:0; width: 100%; z-index: 2000 !important; background: #222021;}
+
+/* ------------------------
+    Navigation
+------------------------*/
+.navbar{padding: 0;}
+.navbar-nav li{margin: 0 15px;}
+.navbar-nav li:last-child{margin-right: 0;}
+.navbar-nav .nav-link {position: relative; padding: 5px 10px !important; color: #ffffff; font-size: 14px; font-weight: 500; text-transform: uppercase;}
+.navbar-nav .nav-link::before{content: ""; position: absolute; left: 0; top: 50%; background: #FF4500; height: 3px; width: 0;}
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link:focus::before,
+.navbar-nav .nav-item .nav-link.active::before{width: 100%;}
+
+/* ------------------------
+    Banner
+------------------------*/
+.align-center{position: absolute; top: 50%; width: 100%; z-index: 9;}
+.fullscreen-banner .align-center{top: 55%;}
+.banner h3{position: relative; padding-bottom: 15px;}
+.banner h3:before{content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: 0; background: #FF4500; width: 50px; height: 2px;}
+.banner ul li {border-right: 1px solid #ffffff; line-height: 14px; margin: 0 !important; padding: 0 10px 0 7px;}
+.banner ul li:last-child{border-right: none;}
+
+/* ------------------------
+    Counter
+------------------------*/
+.counter{position:relative;}
+.counter .count-number{display:block; font-family: 'Bitter', serif; font-size:50px; font-style: italic; font-weight:bold; margin:0; line-height:50px; position: relative; color:#FF4500;}
+.counter label{font-family: 'Bitter', serif; font-weight:bold; color:#ffffff; text-transform: uppercase; font-size:18px; position:relative; margin:15px 0; margin-bottom:0; padding-top: 15px;}
+.counter label:before{position: absolute; content: ""; background: #FF4500; width: 30px; height: 2px; top: 0; left: 50%; transform: translateX(-50%);}
+
+
+/* ------------------------
+    Demo
+------------------------*/
+.home-img {overflow: hidden; position: relative; -webkit-box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2); -moz-box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2); box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2); overflow: hidden; display: block;}
+.home-img img{transform: translate3d(-5px, 0px, 0px); width: calc(100% + 10px);}
+.home-img:hover img{transform: translate3d(0px, 0px, 0px);}
+.home-img::before{z-index: 9; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(255,255,255,0.3); content: ''; -webkit-transition: -webkit-transform 0.6s; transition: transform 0.6s; -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-110%,0);
+  transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-110%,0); border: none;}
+.home-img:hover::before {-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,110%,0); transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,110%,0);}
+.home-img:after {opacity: 0; content: ''; display: inline-block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 99; background: rgba(0,0,0,0.6);
+-webkit-transition: all 0.7s cubic-bezier(.68,.11,.13,.98); -moz-transition: all 0.7s cubic-bezier(.68,.11,.13,.98); transition: all 0.7s cubic-bezier(.68,.11,.13,.98); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.home-img:hover:after{opacity: 1;}
+.page-pre{position: absolute; top: 50%; width: 100%; padding: 15px; left: 0; z-index: 999; transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%);}
+.page-pre a{z-index: 9; width: 40px; height: 40px; line-height: 40px; background: #FF4500; display: inline-block;
+ margin: 0 5px; color: #ffffff; font-size: 24px; border-radius: 50%; opacity: 0; -webkit-transform: rotateZ(180deg); -moz-transform: rotateZ(180deg); -ms-transform: rotateZ(180deg); -o-transform: rotateZ(180deg); transform: rotateZ(180deg);
+-webkit-transition: -webkit-transform 0.3s; -moz-transition: -moz-transform 0.3s; -o-transition: -o-transform 0.3s; transition: transform 0.3s;}
+a.popup:hover{color: #222021}
+.home-img:hover .page-pre a{opacity: 1; -webkit-transform: rotateZ(0deg); -moz-transform: rotateZ(0deg); -ms-transform: rotateZ(0deg); -o-transform: rotateZ(0deg); transform: rotateZ(0deg);}
+.link-title a{position: relative;}
+.link-title a::before{content: ""; position: absolute; left: 0; top: 50%; background: #FF4500; height: 3px; width: 0;}
+.link-title a:hover::before{width: 100%;}
+
+/* ------------------------
+    Portfolio
+------------------------*/
+.portfolio-filter {overflow: hidden; display: inline-block; margin:0 auto 50px; text-align: center;}
+.portfolio-filter button {position: relative; cursor: pointer; padding: 10px 30px; border-radius: 30px; font-size: 16px; font-weight: bold; background: transparent; color: #222021; border:none; float: left; text-transform: uppercase;}
+.portfolio-filter button:focus { outline: none;  outline-style: none; outline-offset:0; }
+.portfolio-filter button.is-checked, .portfolio-filter button:hover {background: #FF4500; color: #ffffff;}
+.portfolio-filter button + button {margin-left: 10px;} 
+.isotope .grid-item img {width: 100%;}
+.theme-bg .portfolio-filter button{color: #ffffff;}
+.theme-bg .portfolio-filter button.is-checked, .theme-bg .portfolio-filter button:hover{background: #ffffff; color: #FF4500;}
+.grid .grid-item{padding: 15px; width: 25%;}
+
+
+/* ------------------------
+    Tab
+------------------------*/
+.tab .nav-tabs{border:none; display: inline-block;}
+.tab .nav-tabs .nav-link{color: #222021; font-size: 16px; text-transform: uppercase; font-weight: bold; border-radius: 30px; position: relative; display: inline-block; border:none; margin: 0; margin-right: 5px; background: #ffffff; padding:12px 30px;}
+.tab .nav-tabs .nav-link.active, .tab .nav-tabs .nav-link:hover, .tab .nav-tabs.active > a:focus, .tab .nav-tabs > a:hover{background: #FF4500; color: #ffffff; border: none;}
+.tab .tab-content{padding: 30px 0;}
+.tab .nav-tabs li a i {margin-right: 10px;}
+
+/* ------------------------
+    Featured Box
+------------------------*/
+.featured-item{background: #ffffff; padding: 40px 30px;}
+.featured-item .featured-icon {margin-bottom: 20px; line-height: 0;}
+.featured-item .featured-icon i{font-size: 65px; line-height: 65px; color: #ff4500;}
+.featured-item:hover .featured-icon i {animation: 0.3s ease 0s normal forwards 1 running toTopFromBottom;}
+.featured-item:hover .featured-icon i {animation-duration: 4s; animation-iteration-count: infinite; animation-name: shake-chunk; animation-timing-function: ease-in-out;}
+.featured-item:hover{-webkit-box-shadow: 0 18px 42px 0 rgba(28, 30, 35, 0.15); -moz-box-shadow: 0 18px 42px 0 rgba(28, 30, 35, 0.15); box-shadow: 0 18px 42px 0 rgba(28, 30, 35, 0.15);}
+ 
+/* ------------------------
+    Scroll to Top
+------------------------*/
+#scroll-top .top{z-index: 999; position:fixed; margin:0px; background:#FF4500; border: 2px solid #ffffff; border-radius: 5px; -webkit-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; transition:all .3s ease-in-out; position:fixed; bottom:65px; right:25px; z-index: 999; font-size:22px; color: #ffffff; width:50px; height:50px; text-align:center; line-height:50px;}
+#scroll-top .top:hover{background: #ffffff; border: 2px solid #FF4500; color: #FF4500}
+
+/* ------------------------
+    Flat Icon
+------------------------*/
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+font-weight: normal;
+}
+
+.flaticon-coding-1:before { content: "\f136"; }
+.flaticon-responsive:before { content: "\f1a2"; }
+.flaticon-pencil-1:before { content: "\f15b"; }
+.flaticon-picture-1:before { content: "\f121"; }
+.flaticon-three:before { content: "\f15e"; }
+.flaticon-computer-1:before { content: "\f1a5"; }
+.flaticon-thinking:before { content: "\f1aa"; }
+.flaticon-blog:before { content: "\f168"; }
+.flaticon-graphic-design-1:before { content: "\f1a9"; }
+.flaticon-technology-2:before { content: "\f194"; }
+.flaticon-resume:before { content: "\f16c"; }
+.flaticon-coding-1:before { content: "\f136"; }
+
+
+/*! * * * * * * * * * * * * * * * * * * * *\  
+  CSShake :: Package
+  v1.5.0
+  CSS classes to move your DOM
+  (c) 2015 @elrumordelaluz
+  http://elrumordelaluz.github.io/csshake/
+  Licensed under MIT
+\* * * * * * * * * * * * * * * * * * * * */.shake,.shake-little,.shake-slow,.shake-hard,.shake-horizontal,.shake-vertical,.shake-rotate,.shake-opacity,.shake-crazy,.shake-chunk{display:inherit;transform-origin:center center}.shake-freeze,.shake-constant.shake-constant--hover:hover,.shake-trigger:hover .shake-constant.shake-constant--hover{animation-play-state:paused}.shake-freeze:hover,.shake-trigger:hover .shake-freeze,.shake:hover,.shake-trigger:hover .shake,.shake-little:hover,.shake-trigger:hover .shake-little,.shake-slow:hover,.shake-trigger:hover .shake-slow,.shake-hard:hover,.shake-trigger:hover .shake-hard,.shake-horizontal:hover,.shake-trigger:hover .shake-horizontal,.shake-vertical:hover,.shake-trigger:hover .shake-vertical,.shake-rotate:hover,.shake-trigger:hover .shake-rotate,.shake-opacity:hover,.shake-trigger:hover .shake-opacity,.shake-crazy:hover,.shake-trigger:hover .shake-crazy,.shake-chunk:hover,.shake-trigger:hover .shake-chunk{animation-play-state:running}@keyframes shake{2%{transform:translate(.5px, 2.5px) rotate(1.5deg)}4%{transform:translate(2.5px, 1.5px) rotate(1.5deg)}6%{transform:translate(1.5px, .5px) rotate(.5deg)}8%{transform:translate(-1.5px, -1.5px) rotate(-.5deg)}10%{transform:translate(-1.5px, 2.5px) rotate(1.5deg)}12%{transform:translate(-1.5px, .5px) rotate(.5deg)}14%{transform:translate(-1.5px, -1.5px) rotate(-.5deg)}16%{transform:translate(1.5px, 2.5px) rotate(1.5deg)}18%{transform:translate(1.5px, -.5px) rotate(1.5deg)}20%{transform:translate(1.5px, -.5px) rotate(1.5deg)}22%{transform:translate(-1.5px, .5px) rotate(-.5deg)}24%{transform:translate(.5px, -1.5px) rotate(-.5deg)}26%{transform:translate(-1.5px, 2.5px) rotate(1.5deg)}28%{transform:translate(-.5px, .5px) rotate(-.5deg)}30%{transform:translate(-1.5px, 2.5px) rotate(.5deg)}32%{transform:translate(.5px, -1.5px) rotate(1.5deg)}34%{transform:translate(.5px, -1.5px) rotate(1.5deg)}36%{transform:translate(2.5px, .5px) rotate(.5deg)}38%{transform:translate(-.5px, .5px) rotate(-.5deg)}40%{transform:translate(.5px, .5px) rotate(1.5deg)}42%{transform:translate(.5px, 1.5px) rotate(1.5deg)}44%{transform:translate(.5px, 2.5px) rotate(.5deg)}46%{transform:translate(1.5px, 1.5px) rotate(-.5deg)}48%{transform:translate(2.5px, .5px) rotate(-.5deg)}50%{transform:translate(1.5px, 1.5px) rotate(1.5deg)}52%{transform:translate(1.5px, 2.5px) rotate(1.5deg)}54%{transform:translate(1.5px, 1.5px) rotate(.5deg)}56%{transform:translate(.5px, -.5px) rotate(.5deg)}58%{transform:translate(-1.5px, .5px) rotate(.5deg)}60%{transform:translate(2.5px, 1.5px) rotate(1.5deg)}62%{transform:translate(1.5px, 2.5px) rotate(-.5deg)}64%{transform:translate(.5px, -1.5px) rotate(1.5deg)}66%{transform:translate(-1.5px, 2.5px) rotate(-.5deg)}68%{transform:translate(-1.5px, 1.5px) rotate(-.5deg)}70%{transform:translate(1.5px, -1.5px) rotate(.5deg)}72%{transform:translate(-.5px, 1.5px) rotate(.5deg)}74%{transform:translate(-.5px, .5px) rotate(-.5deg)}76%{transform:translate(2.5px, 1.5px) rotate(-.5deg)}78%{transform:translate(1.5px, .5px) rotate(1.5deg)}80%{transform:translate(-1.5px, .5px) rotate(1.5deg)}82%{transform:translate(2.5px, 1.5px) rotate(1.5deg)}84%{transform:translate(-.5px, .5px) rotate(-.5deg)}86%{transform:translate(-1.5px, 2.5px) rotate(-.5deg)}88%{transform:translate(1.5px, -.5px) rotate(-.5deg)}90%{transform:translate(-1.5px, 2.5px) rotate(-.5deg)}92%{transform:translate(-1.5px, 2.5px) rotate(.5deg)}94%{transform:translate(-.5px, .5px) rotate(-.5deg)}96%{transform:translate(.5px, -1.5px) rotate(.5deg)}98%{transform:translate(.5px, .5px) rotate(1.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake:hover,.shake-trigger:hover .shake,.shake.shake-freeze,.shake.shake-constant{animation-name:shake;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-little{2%{transform:translate(0px, 0px) rotate(.5deg)}4%{transform:translate(0px, 1px) rotate(.5deg)}6%{transform:translate(1px, 0px) rotate(.5deg)}8%{transform:translate(1px, 1px) rotate(.5deg)}10%{transform:translate(1px, 0px) rotate(.5deg)}12%{transform:translate(0px, 0px) rotate(.5deg)}14%{transform:translate(0px, 1px) rotate(.5deg)}16%{transform:translate(1px, 0px) rotate(.5deg)}18%{transform:translate(0px, 0px) rotate(.5deg)}20%{transform:translate(1px, 1px) rotate(.5deg)}22%{transform:translate(1px, 1px) rotate(.5deg)}24%{transform:translate(1px, 0px) rotate(.5deg)}26%{transform:translate(1px, 0px) rotate(.5deg)}28%{transform:translate(1px, 1px) rotate(.5deg)}30%{transform:translate(0px, 1px) rotate(.5deg)}32%{transform:translate(0px, 1px) rotate(.5deg)}34%{transform:translate(0px, 0px) rotate(.5deg)}36%{transform:translate(0px, 1px) rotate(.5deg)}38%{transform:translate(1px, 0px) rotate(.5deg)}40%{transform:translate(0px, 0px) rotate(.5deg)}42%{transform:translate(1px, 0px) rotate(.5deg)}44%{transform:translate(0px, 0px) rotate(.5deg)}46%{transform:translate(1px, 0px) rotate(.5deg)}48%{transform:translate(0px, 1px) rotate(.5deg)}50%{transform:translate(1px, 0px) rotate(.5deg)}52%{transform:translate(1px, 0px) rotate(.5deg)}54%{transform:translate(0px, 1px) rotate(.5deg)}56%{transform:translate(0px, 1px) rotate(.5deg)}58%{transform:translate(1px, 0px) rotate(.5deg)}60%{transform:translate(1px, 1px) rotate(.5deg)}62%{transform:translate(1px, 1px) rotate(.5deg)}64%{transform:translate(1px, 1px) rotate(.5deg)}66%{transform:translate(1px, 0px) rotate(.5deg)}68%{transform:translate(0px, 0px) rotate(.5deg)}70%{transform:translate(1px, 1px) rotate(.5deg)}72%{transform:translate(0px, 1px) rotate(.5deg)}74%{transform:translate(0px, 1px) rotate(.5deg)}76%{transform:translate(0px, 0px) rotate(.5deg)}78%{transform:translate(1px, 1px) rotate(.5deg)}80%{transform:translate(0px, 1px) rotate(.5deg)}82%{transform:translate(1px, 0px) rotate(.5deg)}84%{transform:translate(0px, 1px) rotate(.5deg)}86%{transform:translate(1px, 1px) rotate(.5deg)}88%{transform:translate(0px, 0px) rotate(.5deg)}90%{transform:translate(1px, 1px) rotate(.5deg)}92%{transform:translate(1px, 1px) rotate(.5deg)}94%{transform:translate(0px, 1px) rotate(.5deg)}96%{transform:translate(1px, 0px) rotate(.5deg)}98%{transform:translate(0px, 1px) rotate(.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-little:hover,.shake-trigger:hover .shake-little,.shake-little.shake-freeze,.shake-little.shake-constant{animation-name:shake-little;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-slow{2%{transform:translate(7px, -8px) rotate(.5deg)}4%{transform:translate(-6px, 4px) rotate(3.5deg)}6%{transform:translate(0px, -9px) rotate(-.5deg)}8%{transform:translate(3px, 5px) rotate(1.5deg)}10%{transform:translate(7px, -4px) rotate(-2.5deg)}12%{transform:translate(-2px, 9px) rotate(.5deg)}14%{transform:translate(7px, -9px) rotate(-1.5deg)}16%{transform:translate(-3px, 6px) rotate(-1.5deg)}18%{transform:translate(-2px, -5px) rotate(-1.5deg)}20%{transform:translate(7px, 5px) rotate(2.5deg)}22%{transform:translate(7px, 5px) rotate(.5deg)}24%{transform:translate(10px, -2px) rotate(.5deg)}26%{transform:translate(7px, -4px) rotate(.5deg)}28%{transform:translate(6px, 0px) rotate(-1.5deg)}30%{transform:translate(-8px, -6px) rotate(-.5deg)}32%{transform:translate(8px, 6px) rotate(-2.5deg)}34%{transform:translate(6px, 2px) rotate(2.5deg)}36%{transform:translate(0px, 2px) rotate(2.5deg)}38%{transform:translate(1px, 1px) rotate(2.5deg)}40%{transform:translate(4px, 5px) rotate(-1.5deg)}42%{transform:translate(2px, 8px) rotate(-2.5deg)}44%{transform:translate(-9px, 8px) rotate(-2.5deg)}46%{transform:translate(0px, -3px) rotate(.5deg)}48%{transform:translate(-2px, 7px) rotate(2.5deg)}50%{transform:translate(-8px, 5px) rotate(-2.5deg)}52%{transform:translate(-3px, -5px) rotate(-1.5deg)}54%{transform:translate(7px, -8px) rotate(-.5deg)}56%{transform:translate(10px, 10px) rotate(-1.5deg)}58%{transform:translate(9px, 8px) rotate(-2.5deg)}60%{transform:translate(5px, -3px) rotate(.5deg)}62%{transform:translate(-6px, 0px) rotate(1.5deg)}64%{transform:translate(-7px, 5px) rotate(-1.5deg)}66%{transform:translate(1px, 4px) rotate(2.5deg)}68%{transform:translate(-1px, -5px) rotate(1.5deg)}70%{transform:translate(-6px, 5px) rotate(-.5deg)}72%{transform:translate(-8px, 5px) rotate(1.5deg)}74%{transform:translate(2px, 0px) rotate(3.5deg)}76%{transform:translate(10px, -4px) rotate(3.5deg)}78%{transform:translate(-8px, 7px) rotate(1.5deg)}80%{transform:translate(2px, 5px) rotate(.5deg)}82%{transform:translate(3px, 3px) rotate(-1.5deg)}84%{transform:translate(3px, -6px) rotate(2.5deg)}86%{transform:translate(-1px, 6px) rotate(-2.5deg)}88%{transform:translate(6px, 2px) rotate(1.5deg)}90%{transform:translate(5px, 5px) rotate(.5deg)}92%{transform:translate(2px, -8px) rotate(3.5deg)}94%{transform:translate(3px, 8px) rotate(-1.5deg)}96%{transform:translate(-7px, -5px) rotate(2.5deg)}98%{transform:translate(-3px, -9px) rotate(3.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-slow:hover,.shake-trigger:hover .shake-slow,.shake-slow.shake-freeze,.shake-slow.shake-constant{animation-name:shake-slow;animation-duration:5s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-hard{2%{transform:translate(9px, -2px) rotate(2.5deg)}4%{transform:translate(8px, 5px) rotate(3.5deg)}6%{transform:translate(-3px, 1px) rotate(-1.5deg)}8%{transform:translate(0px, -2px) rotate(2.5deg)}10%{transform:translate(3px, -4px) rotate(-2.5deg)}12%{transform:translate(-1px, 10px) rotate(-.5deg)}14%{transform:translate(0px, 10px) rotate(-1.5deg)}16%{transform:translate(7px, -1px) rotate(3.5deg)}18%{transform:translate(1px, 10px) rotate(3.5deg)}20%{transform:translate(1px, -5px) rotate(3.5deg)}22%{transform:translate(2px, 1px) rotate(3.5deg)}24%{transform:translate(2px, 0px) rotate(2.5deg)}26%{transform:translate(2px, 6px) rotate(2.5deg)}28%{transform:translate(-7px, 3px) rotate(3.5deg)}30%{transform:translate(1px, -1px) rotate(1.5deg)}32%{transform:translate(3px, 5px) rotate(-1.5deg)}34%{transform:translate(-2px, 1px) rotate(-.5deg)}36%{transform:translate(8px, 6px) rotate(.5deg)}38%{transform:translate(-2px, 2px) rotate(-2.5deg)}40%{transform:translate(7px, -5px) rotate(2.5deg)}42%{transform:translate(9px, -9px) rotate(2.5deg)}44%{transform:translate(-7px, 0px) rotate(-2.5deg)}46%{transform:translate(-5px, -6px) rotate(.5deg)}48%{transform:translate(6px, 7px) rotate(.5deg)}50%{transform:translate(3px, -9px) rotate(-2.5deg)}52%{transform:translate(3px, 9px) rotate(.5deg)}54%{transform:translate(-8px, -2px) rotate(-2.5deg)}56%{transform:translate(2px, -2px) rotate(-.5deg)}58%{transform:translate(-3px, -4px) rotate(3.5deg)}60%{transform:translate(0px, 5px) rotate(-2.5deg)}62%{transform:translate(-7px, 8px) rotate(.5deg)}64%{transform:translate(10px, 6px) rotate(1.5deg)}66%{transform:translate(-2px, -6px) rotate(-.5deg)}68%{transform:translate(10px, -6px) rotate(2.5deg)}70%{transform:translate(0px, 7px) rotate(3.5deg)}72%{transform:translate(1px, -8px) rotate(-2.5deg)}74%{transform:translate(5px, -1px) rotate(3.5deg)}76%{transform:translate(-3px, 9px) rotate(-.5deg)}78%{transform:translate(-2px, 8px) rotate(.5deg)}80%{transform:translate(7px, 7px) rotate(3.5deg)}82%{transform:translate(-2px, -8px) rotate(3.5deg)}84%{transform:translate(6px, 5px) rotate(1.5deg)}86%{transform:translate(8px, 9px) rotate(2.5deg)}88%{transform:translate(10px, 1px) rotate(-2.5deg)}90%{transform:translate(9px, -4px) rotate(2.5deg)}92%{transform:translate(-8px, -4px) rotate(1.5deg)}94%{transform:translate(0px, 8px) rotate(1.5deg)}96%{transform:translate(0px, 10px) rotate(1.5deg)}98%{transform:translate(-4px, 5px) rotate(2.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-hard:hover,.shake-trigger:hover .shake-hard,.shake-hard.shake-freeze,.shake-hard.shake-constant{animation-name:shake-hard;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-horizontal{2%{transform:translate(-7px, 0) rotate(0)}4%{transform:translate(-5px, 0) rotate(0)}6%{transform:translate(4px, 0) rotate(0)}8%{transform:translate(-4px, 0) rotate(0)}10%{transform:translate(-6px, 0) rotate(0)}12%{transform:translate(2px, 0) rotate(0)}14%{transform:translate(-5px, 0) rotate(0)}16%{transform:translate(-3px, 0) rotate(0)}18%{transform:translate(2px, 0) rotate(0)}20%{transform:translate(3px, 0) rotate(0)}22%{transform:translate(-2px, 0) rotate(0)}24%{transform:translate(-3px, 0) rotate(0)}26%{transform:translate(-9px, 0) rotate(0)}28%{transform:translate(2px, 0) rotate(0)}30%{transform:translate(7px, 0) rotate(0)}32%{transform:translate(2px, 0) rotate(0)}34%{transform:translate(0px, 0) rotate(0)}36%{transform:translate(-1px, 0) rotate(0)}38%{transform:translate(6px, 0) rotate(0)}40%{transform:translate(-7px, 0) rotate(0)}42%{transform:translate(0px, 0) rotate(0)}44%{transform:translate(-1px, 0) rotate(0)}46%{transform:translate(-2px, 0) rotate(0)}48%{transform:translate(10px, 0) rotate(0)}50%{transform:translate(-8px, 0) rotate(0)}52%{transform:translate(-9px, 0) rotate(0)}54%{transform:translate(9px, 0) rotate(0)}56%{transform:translate(-2px, 0) rotate(0)}58%{transform:translate(-5px, 0) rotate(0)}60%{transform:translate(2px, 0) rotate(0)}62%{transform:translate(-4px, 0) rotate(0)}64%{transform:translate(1px, 0) rotate(0)}66%{transform:translate(-3px, 0) rotate(0)}68%{transform:translate(10px, 0) rotate(0)}70%{transform:translate(4px, 0) rotate(0)}72%{transform:translate(-6px, 0) rotate(0)}74%{transform:translate(-6px, 0) rotate(0)}76%{transform:translate(2px, 0) rotate(0)}78%{transform:translate(-2px, 0) rotate(0)}80%{transform:translate(-6px, 0) rotate(0)}82%{transform:translate(-1px, 0) rotate(0)}84%{transform:translate(-6px, 0) rotate(0)}86%{transform:translate(-5px, 0) rotate(0)}88%{transform:translate(-1px, 0) rotate(0)}90%{transform:translate(-1px, 0) rotate(0)}92%{transform:translate(-1px, 0) rotate(0)}94%{transform:translate(-3px, 0) rotate(0)}96%{transform:translate(-6px, 0) rotate(0)}98%{transform:translate(-6px, 0) rotate(0)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-horizontal:hover,.shake-trigger:hover .shake-horizontal,.shake-horizontal.shake-freeze,.shake-horizontal.shake-constant{animation-name:shake-horizontal;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-vertical{2%{transform:translate(0, 0px) rotate(0)}4%{transform:translate(0, 7px) rotate(0)}6%{transform:translate(0, 10px) rotate(0)}8%{transform:translate(0, -5px) rotate(0)}10%{transform:translate(0, 0px) rotate(0)}12%{transform:translate(0, 1px) rotate(0)}14%{transform:translate(0, -8px) rotate(0)}16%{transform:translate(0, 6px) rotate(0)}18%{transform:translate(0, 10px) rotate(0)}20%{transform:translate(0, 6px) rotate(0)}22%{transform:translate(0, -9px) rotate(0)}24%{transform:translate(0, -6px) rotate(0)}26%{transform:translate(0, -2px) rotate(0)}28%{transform:translate(0, 9px) rotate(0)}30%{transform:translate(0, -8px) rotate(0)}32%{transform:translate(0, 6px) rotate(0)}34%{transform:translate(0, 0px) rotate(0)}36%{transform:translate(0, -4px) rotate(0)}38%{transform:translate(0, 1px) rotate(0)}40%{transform:translate(0, 4px) rotate(0)}42%{transform:translate(0, -3px) rotate(0)}44%{transform:translate(0, 9px) rotate(0)}46%{transform:translate(0, -1px) rotate(0)}48%{transform:translate(0, -3px) rotate(0)}50%{transform:translate(0, 9px) rotate(0)}52%{transform:translate(0, -2px) rotate(0)}54%{transform:translate(0, -1px) rotate(0)}56%{transform:translate(0, -7px) rotate(0)}58%{transform:translate(0, -3px) rotate(0)}60%{transform:translate(0, 0px) rotate(0)}62%{transform:translate(0, 1px) rotate(0)}64%{transform:translate(0, -8px) rotate(0)}66%{transform:translate(0, 3px) rotate(0)}68%{transform:translate(0, 9px) rotate(0)}70%{transform:translate(0, 8px) rotate(0)}72%{transform:translate(0, -9px) rotate(0)}74%{transform:translate(0, 1px) rotate(0)}76%{transform:translate(0, -2px) rotate(0)}78%{transform:translate(0, -6px) rotate(0)}80%{transform:translate(0, 6px) rotate(0)}82%{transform:translate(0, 4px) rotate(0)}84%{transform:translate(0, 5px) rotate(0)}86%{transform:translate(0, 10px) rotate(0)}88%{transform:translate(0, -1px) rotate(0)}90%{transform:translate(0, 7px) rotate(0)}92%{transform:translate(0, 0px) rotate(0)}94%{transform:translate(0, -5px) rotate(0)}96%{transform:translate(0, 8px) rotate(0)}98%{transform:translate(0, -3px) rotate(0)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-vertical:hover,.shake-trigger:hover .shake-vertical,.shake-vertical.shake-freeze,.shake-vertical.shake-constant{animation-name:shake-vertical;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-rotate{2%{transform:translate(0, 0) rotate(6.5deg)}4%{transform:translate(0, 0) rotate(3.5deg)}6%{transform:translate(0, 0) rotate(-3.5deg)}8%{transform:translate(0, 0) rotate(5.5deg)}10%{transform:translate(0, 0) rotate(-4.5deg)}12%{transform:translate(0, 0) rotate(-4.5deg)}14%{transform:translate(0, 0) rotate(-6.5deg)}16%{transform:translate(0, 0) rotate(2.5deg)}18%{transform:translate(0, 0) rotate(-5.5deg)}20%{transform:translate(0, 0) rotate(.5deg)}22%{transform:translate(0, 0) rotate(-3.5deg)}24%{transform:translate(0, 0) rotate(-6.5deg)}26%{transform:translate(0, 0) rotate(6.5deg)}28%{transform:translate(0, 0) rotate(1.5deg)}30%{transform:translate(0, 0) rotate(-5.5deg)}32%{transform:translate(0, 0) rotate(7.5deg)}34%{transform:translate(0, 0) rotate(-3.5deg)}36%{transform:translate(0, 0) rotate(7.5deg)}38%{transform:translate(0, 0) rotate(-5.5deg)}40%{transform:translate(0, 0) rotate(3.5deg)}42%{transform:translate(0, 0) rotate(6.5deg)}44%{transform:translate(0, 0) rotate(1.5deg)}46%{transform:translate(0, 0) rotate(3.5deg)}48%{transform:translate(0, 0) rotate(-.5deg)}50%{transform:translate(0, 0) rotate(-4.5deg)}52%{transform:translate(0, 0) rotate(4.5deg)}54%{transform:translate(0, 0) rotate(-3.5deg)}56%{transform:translate(0, 0) rotate(4.5deg)}58%{transform:translate(0, 0) rotate(-3.5deg)}60%{transform:translate(0, 0) rotate(5.5deg)}62%{transform:translate(0, 0) rotate(6.5deg)}64%{transform:translate(0, 0) rotate(3.5deg)}66%{transform:translate(0, 0) rotate(-3.5deg)}68%{transform:translate(0, 0) rotate(-4.5deg)}70%{transform:translate(0, 0) rotate(-6.5deg)}72%{transform:translate(0, 0) rotate(6.5deg)}74%{transform:translate(0, 0) rotate(-5.5deg)}76%{transform:translate(0, 0) rotate(-6.5deg)}78%{transform:translate(0, 0) rotate(5.5deg)}80%{transform:translate(0, 0) rotate(-6.5deg)}82%{transform:translate(0, 0) rotate(.5deg)}84%{transform:translate(0, 0) rotate(4.5deg)}86%{transform:translate(0, 0) rotate(5.5deg)}88%{transform:translate(0, 0) rotate(-6.5deg)}90%{transform:translate(0, 0) rotate(-5.5deg)}92%{transform:translate(0, 0) rotate(4.5deg)}94%{transform:translate(0, 0) rotate(2.5deg)}96%{transform:translate(0, 0) rotate(-5.5deg)}98%{transform:translate(0, 0) rotate(2.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-rotate:hover,.shake-trigger:hover .shake-rotate,.shake-rotate.shake-freeze,.shake-rotate.shake-constant{animation-name:shake-rotate;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-opacity{10%{transform:translate(-1px, -2px) rotate(-.5deg);opacity:.98}20%{transform:translate(-4px, 0px) rotate(1.5deg);opacity:.69}30%{transform:translate(0px, 2px) rotate(-1.5deg);opacity:.39}40%{transform:translate(4px, 0px) rotate(1.5deg);opacity:.47}50%{transform:translate(-1px, -1px) rotate(2.5deg);opacity:.02}60%{transform:translate(3px, 3px) rotate(.5deg);opacity:.29}70%{transform:translate(0px, 2px) rotate(2.5deg);opacity:.44}80%{transform:translate(-1px, 4px) rotate(1.5deg);opacity:.04}90%{transform:translate(2px, 2px) rotate(1.5deg);opacity:.81}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-opacity:hover,.shake-trigger:hover .shake-opacity,.shake-opacity.shake-freeze,.shake-opacity.shake-constant{animation-name:shake-opacity;animation-duration:.5s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-crazy{10%{transform:translate(11px, -15px) rotate(-7deg);opacity:.57}20%{transform:translate(18px, -11px) rotate(-6deg);opacity:.63}30%{transform:translate(1px, -12px) rotate(0deg);opacity:.33}40%{transform:translate(-5px, -10px) rotate(4deg);opacity:.76}50%{transform:translate(7px, -18px) rotate(4deg);opacity:.8}60%{transform:translate(-5px, -11px) rotate(9deg);opacity:.43}70%{transform:translate(10px, -2px) rotate(-5deg);opacity:.93}80%{transform:translate(3px, 13px) rotate(5deg);opacity:.81}90%{transform:translate(14px, 7px) rotate(4deg);opacity:.92}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-crazy:hover,.shake-trigger:hover .shake-crazy,.shake-crazy.shake-freeze,.shake-crazy.shake-constant{animation-name:shake-crazy;animation-duration:100ms;animation-timing-function:ease-in-out;animation-iteration-count:infinite}@keyframes shake-chunk{2%{transform:translate(7px, 13px) rotate(0deg)}4%{transform:translate(9px, -6px) rotate(0deg)}6%{transform:translate(-1px, -4px) rotate(2deg)}8%{transform:translate(-13px, 15px) rotate(12deg)}10%{transform:translate(-1px, 5px) rotate(-8deg)}12%{transform:translate(-4px, 5px) rotate(-8deg)}14%{transform:translate(4px, -2px) rotate(10deg)}16%{transform:translate(8px, -6px) rotate(12deg)}18%{transform:translate(11px, -3px) rotate(7deg)}20%{transform:translate(6px, 7px) rotate(7deg)}22%{transform:translate(9px, 5px) rotate(11deg)}24%{transform:translate(1px, -5px) rotate(-14deg)}26%{transform:translate(2px, 8px) rotate(8deg)}28%{transform:translate(-12px, -12px) rotate(-11deg)}30%{transform:translate(1px, 14px) rotate(-8deg)}32%{transform:translate(-4px, -9px) rotate(14deg)}34%{transform:translate(0px, 9px) rotate(5deg)}36%{transform:translate(8px, -12px) rotate(1deg)}38%{transform:translate(-8px, -6px) rotate(6deg)}0%,40%,100%{transform:translate(0, 0) rotate(0)}}.shake-chunk:hover,.shake-trigger:hover .shake-chunk,.shake-chunk.shake-freeze,.shake-chunk.shake-constant{animation-name:shake-chunk;animation-duration:4s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+
+
+
+/* ------------------------
+    Responsive
+------------------------*/
+
+@media (max-width: 992px){
+.md-mt-5{margin-top: 50px;}
+.grid .grid-item{width: 33.3333%;}
+.navbar-nav li {margin: 0 5px;}
+}
+
+@media (max-width: 767px){
+h1{font-size: 40px; line-height: 40px;}
+h2{font-size: 30px; line-height: 40px;}
+h3 {font-size: 22px; line-height: 30px;}
+.btn {font-size: 13px; padding: 10px 20px;}
+.featured-item h5 {color: #222021; font-size: 16px;}
+.featured-item {min-height: 270px;}
+.sm-mt-5{margin-top: 50px;}
+
+/*Navigation*/
+.navbar {justify-content: flex-end; text-align: left !important;}
+.navbar-toggler {background: #FF4500; border-radius: 0; margin-top: 0;}
+.navbar-toggler-icon{height: inherit; width: inherit;}
+.navbar-toggler-icon:before{content: ""; font-family: "themify"; font-style: normal; font-weight: normal; text-decoration: inherit;
+color: #ffffff; font-size: 21px;}
+#header-wrap.fixed-header .navbar-toggler{margin-top: 0;}
+.navbar-collapse{position: absolute; left: 0; width: 100%; background: #ffffff; border: none; padding: 0; top: 35px;}
+.navbar-nav .nav-item{margin: 0 0 1px;}
+.navbar-nav .nav-item a{font-size: 14px; color: #222021}
+.navbar-nav .nav-item a.active, .navbar-nav .nav-item a:focus, .navbar-nav .nav-item a:hover{color: #ffffff; background: #FF4500;}
+.navbar-nav .nav-link:hover span, .navbar-nav .nav-link:focus span, .navbar-nav .nav-item .nav-link.active span{background: #ffffff !important; color: #FF4500 !important;}
+.navbar-nav .nav-link::before{display: none;}
+
+.banner img{height: 150px;}
+.counter{margin-top: 30px;}
+.grid .grid-item{width: 50%;}
+.portfolio-filter button {font-size: 14px; padding: 5px 25px;}
+.portfolio-filter button + button {margin-left: 5px;}
+.owl-carousel .owl-dots{padding: 10px;}
+}
+
+
+@media (max-width: 576px){
+.col-xs-6{width: 50%;}
+.xs-mt-3{margin-top: 30px !important}
+.xs-mt-0{margin-top: 0 !important}
+h2 {font-size: 24px; line-height: 30px;}
+.banner img {height: 70px;}
+.counter .count-number {font-size: 30px; line-height: 30px;}
+.counter label {font-size: 13px; margin: 10px 0 0; padding-top: 10px;}
+.portfolio-filter button {font-size: 13px; padding: 5px 15px;}
+}

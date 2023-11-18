@@ -1,0 +1,20 @@
+// Backend ::
+1- التحكم فى ازار (try it & get Quote) فى اول section .
+2- Couple Photo Gallery
+3- Features Note Sections
+// Client Dashboaed
+عمل لينك download فى صفحه ال order لل order الى حالته complete + latest اخر order هو اول واحد
+    وهند عمل العميل download يتم ارسال رساله انه العميل عمل download
+بعد عمل save لل retouch style يعمل redirect على create order
+اضافة progress bar للصور فى ال order
+تفعيل ال image extension validation فى ال order من جدول ال image extension
+--------------------------------
+// Frontend ::
+
+
+-------------------------------------------
+1- service section ::
+    https://photo.tag-soft.com/admin/dashboard/mainHome
+    -> Service Title
+    -> Service Color Slug
+    -> Services Gallery Description

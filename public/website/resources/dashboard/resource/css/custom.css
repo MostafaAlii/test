@@ -1,0 +1,140 @@
+.samples-prices-cont .item-cont .item .samples-order-btn:hover{
+    background-color: #d50d0d;
+    cursor: default; 
+    color: #fff;
+}
+.services-cont .posts .col-12:nth-child(even){
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.services-cont .posts .col-12{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.services-cont .posts::after{
+    display: none;
+}
+.services-cont{
+    margin-top: 50px;
+}
+.services-cont .posts{
+    margin-top: 60px;
+}
+.services-cont .post{
+    width: 85%;
+    margin: auto;
+}
+.services-cont .post h2{
+    font-size: 22px;
+    padding: 18px;
+}
+.services-cont .widget-title,
+.samples-prices-cont .widget-title{
+    margin-bottom: 40px;
+}
+.my-breadcrumb{
+    margin: 50px 0 15px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #fbfbfb;
+}
+.my-breadcrumb a{
+    font-size: 16px;
+    color: #d50d0d;
+}
+.my-breadcrumb a:hover{
+    color: #f50f0f;
+}
+.my-breadcrumb span:not(:last-child)::after{
+    content: "»";
+    margin: 0 5px;
+    color: #d50d0d;
+    text-decoration: none
+}
+.my-breadcrumb span{
+    font-size: 16px;
+    color: #333;
+}
+.service-first-article{
+    margin-top: 15px;
+}
+.service-article{
+    color: #333;
+}
+.register-coloring .h1{
+    margin-top: 200px;
+    font-size: 75px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 25px;
+}
+.register-coloring .h2{
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #fff;
+    padding: 0 20px;
+}
+.register-form input[type=number]{
+    padding: 6px 15px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: 0;
+    box-shadow: none;
+    color: #555;
+}
+.register-form input[type=number]:focus{
+    border: 1px solid #d50d0d;
+    outline: 0;
+    box-shadow: none;
+}
+.captcha-form-group{
+    user-select: none;
+    cursor: default;
+}
+.captcha-form-group label{
+    font-size: 17px;
+}
+.captcha{
+    height: 40px;
+    position: relative;
+    color: #fff;
+    padding-right: 20px;
+    font-size: 30px;
+    overflow: hidden;
+    background-color: #808080;
+}
+.captcha::after, 
+.captcha::before {
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 66%;
+    content: "";
+    transform: rotateZ(20deg);
+    background-color: #d69943;
+}
+.captcha::before {
+    width: 60%;
+    left: 30%;
+    top: 20%;
+    transform: rotateZ(45deg);
+}
+@media (max-width: 991.98px){
+    .services-cont .posts .col-12 {
+        margin-top: 20px !important;
+    }
+}
+@media (max-width: 575.98px){
+    .services-cont{
+        padding: 50px 0;
+    }
+    .services-cont .post {
+        width: 90%;
+    }
+}
