@@ -204,6 +204,7 @@ return [
         'RetouchService'    => App\Models\RetouchService::class,
         'OrderService'    => App\Models\OrderService::class,
         'Order'    => App\Models\Order::class,
+        'FreeOrder'    => App\Models\FreeOrder::class,
 
     ])->toArray(),
 

@@ -56,6 +56,12 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth:admin']], function () 
             Route::post('/updateStatus/{id}', [Backend\OrderController::class, 'updateStatus'])->name('orders.updateStatus');
         });
 
+        Route::prefix('freeOrders')->group(function () {
+            Route::get('/', [Backend\FreeOrderController::class, 'index'])->name('freeOrders.index');
+            Route::get('/{id}', [Backend\FreeOrderController::class, 'show'])->name('freeOrders.show');
+            Route::post('/order/{id}', [Backend\FreeOrderController::class, 'destroy'])->name('freeOrders.destroy');
+        });
+
         Route::resource('sections', Backend\SectionController::class);
         Route::resource('blogs', Backend\BlogsController::class);
         Route::resource('services', Backend\ServicesController::class);

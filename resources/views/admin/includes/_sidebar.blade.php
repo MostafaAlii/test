@@ -255,6 +255,13 @@
                             <span class="badge badge-primary round"> {{ Order::count() }} </span>
                         </a>
                     </li>
+                    <li class="{{ request()->routeIs('orders.*') ? ' active' : null }}">
+                        <a class="menu-item" href="{{ route('freeOrders.index') }}">
+                            <i class="mr-1 material-icons">image</i>
+                            <span data-i18n="Second level">Free Orders</span>
+                            <span class="badge badge-primary round"> {{ FreeOrder::count() }} </span>
+                        </a>
+                    </li>
                 </ul>
             </li>
             <!-- End Orders Menu -->
