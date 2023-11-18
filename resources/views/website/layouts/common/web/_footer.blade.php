@@ -1,6 +1,6 @@
 </div>
 <!-- Body End -->
-<footer class="py-4 bg-dark text-light">
+{{--<footer class="py-4 bg-dark text-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-6">
@@ -64,4 +64,54 @@
         </p>
       </div>
     </div>
-</footer>
+</footer>--}}
+
+<div class="bottomBorder2"></div>
+<div style="width:1000px;margin:auto;height:70px;">
+  <div style="width: 780px; float: left; font-size: 13px;"><a href="index.html"><span class="style41"><br><span
+          class="style41">HOME</span></span></a><span class="style41"> | <a href="prices.html"><span
+          class="style41">PRICES</span></a><a href="prices.html"></a> | <a href="order.html"><span
+          class="style41">ORDER</span></a><a href="order.html"></a> | <a href="examples.html"><span
+          class="style41">EXAMPLES</span></a><a href="examples.html"></a> | <a href="tour.html"><span
+          class="style41">TOUR</span></a><a href="tour.html"></a> | <a href="faq.html"><span
+          class="style41">FAQ</span></a><a href="contact.html"></a> | <a href="contact.html"><span
+          class="style41">CONTACT</span></a><a href="offers.html"></a> | <a href="offers.html"><span
+          class="style41">OFFERS</span></a><a href="faq.html"></a> | <a href="about.html"><span
+          class="style41">ABOUT</span></a><a href="photo-retouching.html"></a> | <a href="terms.html"><span
+          class="style41">TERMS</span></a><a href="about.html"></a> | <a href="privacy.html"><span
+          class="style41">PRIVACY</span></a><a href="terms.html"></a> | <a href="copyright.html"><span
+          class="style41">COPYRIGHT</span></a><a href="privacy.html"></a></span></div>
+  <div class="payment-methods"></div>
+</div>
+<div class="borderBottom">
+  <div class="block1"></div>
+  <div class="block2"></div>
+  <div class="block3"></div>
+  <div class="block4"></div>
+  <div class="block5"></div>
+  <div class="block6"></div>
+  <div class="block7"></div>
+  <div class="block8"></div>
+  <div class="block7"></div>
+  <div class="block8"></div>
+  <div class="block7"></div>
+  <div class="block8"></div>
+  <div class="block7"></div>
+  <div class="block14"></div>
+  <div class="block15"></div>
+  <div class="block16"></div>
+  <div class="block17"></div>
+  <div class="block18"></div>
+  <div class="block19"></div>
+  <div class="block20"></div>
+  <div class="block21"></div>
+  <div class="block22"></div>
+  <div class="block23"></div>
+  <div class="block24"></div>
+  <div class="block25"></div>
+  <div class="block26"></div>
+  <div class="block27"></div>
+</div>
+<div
+  style="width:1000px; margin:auto; text-align:right; font-family:Arial; font-size:10px; line-height:20px; color:#b9b9b9; margin-bottom: 40px;">
+  COPYRIGHT © ARTISTICRETOUCH.COM 2020 ALL RIGHTS RESERVED </div>

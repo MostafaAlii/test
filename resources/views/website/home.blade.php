@@ -57,14 +57,13 @@ Home
     }
   }
 </style>
-
-
 <link href="{{ asset('website/resources/css/edits.css') }}" rel="stylesheet" />
+<link href="{{ asset('website/resources/css/new.css') }}" rel="stylesheet" />
 @endsection
 
 @section('content')
 <!-- Start Navbar -->
-<nav class="container navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-white-bg">
+{{--<nav class="container navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-white-bg">
   <a class="navbar-brand logo" href="#"><img
       src="{{ asset('website/resources/dashboard/resource/img/logo.png') }}" /></a>
   <button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -127,7 +126,9 @@ Home
       </li>
     </ul>
   </div>
-</nav>
+</nav>--}}
+
+
 <!-- End Navbar -->
 
 <!-- Start Slider -->
