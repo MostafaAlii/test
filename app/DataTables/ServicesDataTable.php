@@ -94,6 +94,7 @@ class ServicesDataTable extends DataTable
             ['name' => 'name', 'data' => 'name', 'title' => 'Name',],
             ['name' => 'image', 'data' => 'image', 'title' => 'Image', 'orderable' => false, 'searchable' => false,],
             ['name' => 'gallery', 'data' => 'gallery', 'title' => 'Gallery', 'orderable' => false, 'searchable' => false,],
+            ['name' => 'url', 'data' => 'url', 'title' => 'URL', 'orderable' => false, 'searchable' => false,],
             ['name' => 'notes', 'data' => 'notes', 'title' => 'Notes',],
             ['name' => 'status', 'data' => 'status', 'title' => 'Status', 'orderable' => false, 'searchable' => false,],
             ['name' => 'price', 'data' => 'price', 'title' => 'price', 'orderable' => false, 'searchable' => false,],
