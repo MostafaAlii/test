@@ -13,6 +13,7 @@ class Service extends Model {
         'price',
         'notes',
         'status',
+        'url'
     ];
 
     public function statusWithLabel() {

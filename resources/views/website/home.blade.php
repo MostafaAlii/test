@@ -7,6 +7,13 @@ Home
 
 <link href="{{ asset('website/resources/lib/lightbox/dist/css/lightbox.min.css') }}" rel="stylesheet" />
 <style>
+  a{
+    text-decoration:none;
+    color: black;
+  }
+  .btnss button:hover a{
+    color:white;
+  }
   .grid-gallery {
     width: 100%;
     max-width: 900px;
@@ -196,7 +203,9 @@ Home
                           font-size: 12px;
                           width: 157px;
                         ">
+                        <a href="https://{{$btn?->url}}" target="_blank">
           {{ $btn?->name }}
+                        </a>
         </button>
         @endforeach
         @endif
@@ -267,7 +276,7 @@ Home
         <div class="block-expand-categories flex-column flex-lg-row d-flex justify-content-center">
           @forelse ($services as $service)
           <div class="expand-category bg-light" style="background-image: url({{ $service->ImagePath() }})">
-            <h4 style="color: #1abc9c">{{ $service?->name }}</h4>
+            <a href="https://{{$service?->url}}"target="_blank"><h4 style="color: #1abc9c">{{ $service?->name }}</h4></a>
           </div>
           @empty
           <div class="col-md-12">
@@ -398,7 +407,9 @@ Home
                                       font-size: 12px;
                                       width: 157px;
                                     ">
-                    {{ $btn->name }}
+                    <a href="https://{{$btn?->url}}" target="_blank">
+                      {{ $btn?->name }}
+                    </a>
                   </button>
                   @endforeach
                   @endif
